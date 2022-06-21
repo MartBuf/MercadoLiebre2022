@@ -1,0 +1,58 @@
+main{
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+}
+
+main .Nombre{
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-top: 12px;
+    border-radius: 5px ;
+    border: solid 1px gray;
+}
+
+.fecha{
+
+    margin-top: 10px;
+    border-radius: 5px ;
+    border: solid 1px gray;
+
+}
+
+.domicilio{
+   
+    padding-top: 10px;
+    margin-top: 12px;
+    border-radius: 5px ;
+    border: solid 1px gray;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.profile{
+
+    margin-top: 12px;
+}
+
+main .items{
+    margin-top: 12px;
+}
+
+main .contraseña{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-top: 12px;
+    border-radius: 5px ;
+    border: solid 1px gray;
+}
+
+main .profile{
+    margin-top: 12px;
+}
