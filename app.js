@@ -18,5 +18,5 @@ app.get('/register', (req,res)=>{
 });
 
 app.listen(4000, ()=>{
-    console.log(`Server running at http://${HOST}:${PORT}/`);
+    console.log(`Server running at http://localhost:4000/`);
 });
