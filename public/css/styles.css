@@ -1,207 +1,440 @@
 *{
-  margin: 0px;
-  padding: 0px;    
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
-body{
-  font-family: 'Roboto', sans-serif;
-  background-color: #ebebeb;
+a{
+    color: #000;
 }
 
-h3{
-  font-size: 24px;
+header {
+    background-color: #eac926;
+}
+header .logoHeader{
+      text-align: center;
+     margin-bottom: 20px;   
+}
+header .logoHeader img{
+    width: 50%;
+}
+.busqueda input{
+    width: 100%;
+    height: 100%;
+}
+.burguer-menu {
+    background-color: #1259c3;
+    
+    width: 50px;
+    margin: auto;
+    
+    display: inline-block;
+    color: white;
+    text-align: center;
+    height: 40px;
+    line-height: 30px;
+}
+.burguer {
+    text-align: center;
+}
+.fa, .fas {
+    font-weight: 900;
+    /* margin-top: 3px; */
+}
+#lupa{
+    position: absolute;
+    margin-top: 3px;
+}
+
+body {
+    background-color: #ebebeb;
+    /* background-color: #eac926; */
+    font-family: 'Roboto', sans-serif;
+}
+ul li {
+    font-size: 12px;
 }
 
 p{
-  font-size: 12px;
+    font-size: 12px;
+    /* margin: auto; */
+}
+p.precio{
+    font-size: 18px;
+}
+p.descuento {
+    font-size: 16px;
+}
+p.descripcion {
+    /* color: red; */
+    font-size: 16px;
+    /* display: none; */
+    /* visibility: ; */
 }
 
-div.top-header{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 5%;
+.card-productos p.descripcion{
+    transition: 0ms;
+    /* transform: none; */
+    /* visibility: none; */
+    display: none;
+    /* display: none; */
 }
 
-header div.top-header p{
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
+.card-productos:hover .descripcion{
+    display: inline-block;
+    /* visibility: visible; */
+    transform: initial;
+    /* color: red; */
+    /* background-color: red; */
 }
 
-header{
-  background-color: #EAC926;
+.ultima-visita .descripcion{
+    display: none;
+}
+.ofertas .descripcion{
+    display: none;
+}
+.items{
+    display: none;
+}
+.loginUsers{
+    display: none;
 }
 
-header div.logo,
-header .form{
-  width: 50%;
+h2 { 
+    
+    font-size:24px
+}
+article{
+    background-color: white;
+}
+.camioncito {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+    position: absolute;
+    TRANSFORM: rotate(0deg);
+   
+    
+
+}
+.card-productos:hover .cosas .camioncito {
+    TRANSFORM: rotate(-90deg);
+    transition: transform 0.5s;
+}
+.cosas {
+    position: relative;
 }
 
-header div.logo{
-  padding: 10px;
-}
-header .form{
-  display: flex;
-  align-items: center;
-  padding: 2px;
-  font-size: 11px;
-}
-header nav{
-  font-size: 12px;
-  margin-left: 20px;
-}
 
-header ul li{
-  list-style-type: none;
-}
-
-header ul li a{
-  text-decoration: none;
-  color: #000;
-}
-
-header .form .input{
-  background-color: #FFF;
-  border: 1px solid #000;
-  outline: none;
-  color: #666;
-  padding: 2px;
-}
-
-header .form .submit{
-  background-color: #FFF;
-  border: 1px solid #000;
-  color: #666;
-  width: 10%;
-}
-
-div.burger-menu{
-  text-align: center;
-}
-
-div.burger-menu i{
-  background-color: #0044AA;
-  border-radius: 5px;
-  color: #FFF;
-  font-size: 20px;
-  height: 40px;
-  margin: 10px 0px 20px 0px;
-  padding: 10px;
-  width: 40px;
-}
-
-div.last-visit,
-div.offers{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.price{
-  font-size: 18px;
-  width: 30%;
-}
-
-.discount{
-  width: 70%;
-}
-
-.discount,
-.description{
-  font-size: 16px;
-  font-weight: normal;
-}
-
-h3,
-.description{
-  color: #666;
-}
-
-.description{
-  display: none;
-  margin-top: 20px;
-}
-
-section.banner img{
-  width: 100%;
+section{
+    
+    box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
 }
 
 main{
-  width: 90%;
-  margin: 0 auto;
+    box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
 }
 
-main section article{
-  background-color: #fff;    
-  margin: 10px 0px;
+footer {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+footer ul {
+    list-style: none;
+}    
+footer li {
+    color: #666;
+}
+footer p {
+    color: #666;
 }
 
-main section article img{
-  width: 100%;
+.footer-flex .fas {
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: 450ms;
+}
+.footer-flex .fas:hover{
+    color: #1259c3;
 }
 
-main section article i,
-.discount{
-  color: #39b54a;
+main{
+    width: 90%;
+    margin: auto;
+    /* display: inline-block; */
+}
+main article{
+    margin-top: 10px;
+    text-align: center;
+
 }
 
-main section article i{
-  display: block;
-  font-size: 16px;
-  padding: 5px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #39b54a;
-  background-color: #FFF;
-  border-radius: 50%;
-  position: absolute;
-  right: 20px;
-  top: -15px;
+main div.cosas{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
 }
 
-main section h3{
-  margin: 20px 0px;
+.card-img{
+    width: 200px;
+}
+.busqueda{
+    height: 26px;
+}
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    /* flex: 1 1 50%; */
+    flex-wrap: wrap;
 }
 
-article div.main-article{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  border-top: 1px solid #ebebeb;
-  position: relative;
-  padding: 15px;
+nav.busqueda{
+    order: 0;
+    flex-grow: 50%;
+}
+.manito {
+    /* display: contents; */
+    /* display:end; */
+    order: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
-@media (min-width: 361px){
-  main section article .description{
-      display: block;
-  }
 
-  main section article{
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
+.items-flex {
+    display: none;
+    justify-content: space-around;
+    text-align: center;
+}
+@media(min-width:413px){
+    main .ultima-visita {
+        display: flex;
+        flex-wrap: wrap;
+        /* box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 ); */
+        /* background-color: red; */
+    }
+    main .ofertas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .items{
+        display: block;
+    }
+    .loginUsers{
+        display: block;
+    }
+    /*.card-productos{
+    }*/
+    .card-productos .card-img{
+        width: 200px;
+        margin: auto;
+    }
+    .ultima-visita .descripcion{
+        display: inline-block;
+    }
+    .ofertas .descripcion{
+        display: inline-block;
+    }
+    .burguer .burguer-menu{
+        display: none;
+    } 
+    .encabezado{
+        display:initial;
+    }
 
-  main section div.products{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-  }
-  
-  main section div.products article{
-      width: 45%;
-  }
+    header{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        /* flex-grow: 1; */
+        /* flex-wrap: wrap; */
+    }
+    header .logoHeader .manito{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-grow: 50%; */
+    }
+    /* header .manito{
+        display: flex;
+        flex-wrap: wrap;
+    } */
+    .items-flex ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 40px;
+    }
+    /* header .loginUsers{
+        display: flex;
+    } */
 
-  .price,
-  .discount{
-      width: 50%;
-  }
+    /* .encabezado{
+        display: flex;
+    }
+    div.logoHeader, nav.busqueda, div.manito{
+        display: flex;
+        flex-grow: 1; */
+        .encabezado-flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }    
+        .items-flex {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
 }
 
-@media (min-width: 769px){
-  main section div.products article{
-      width: 22%;
-  }
+@media(min-width:769px){
+    /*main{
+        /* background-color: white; */
+        /* box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 ); }*/
+   
+    .card-productos .card-img{
+        width: 200px;
+        margin: auto;
+    }
+    .ultima-visita .descripcion{
+        display: inline-block;
+    }
+
+    .footer-flex{
+        display: flex;
+        margin: 10px;
+    }
+}
+
+img{
+    width: 90%;
+}
+
+.card-productos{
+    /* width: 90%; */
+    
+    margin: 5px;
+    /* position: relative; */
+
+}
+.card-productos:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.card-img{
+    width: 90%;
+}
+.ofertas{
+    text-align: center;
+    box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+    /* background-color: red; */
+}
+
+.ultima-visita .descuento{
+    color: #39b54a;
+}
+.ofertas .descuento{
+    color: #39b54a;
+}
+
+.banner{
+    width: 100%;
+}
+
+/* .ultima-visita{
+    justify-content: space-between;
+} */
+
+.card-productos{
+    flex-grow: 1;
+    
+}
+
+.card-img{
+    margin: auto;
+}
+
+.precio-flex{
+    display: flex;
+}
+.precio-flex .precio{
+    display: flex;
+    flex-grow: 30%;
+    /* margin: auto; */
+}
+.precio-flex .descuento{
+    flex-grow: 70%;
+    margin: auto;
+}
+
+.logoHeader{
+    display: flex;
+    flex-grow: 1;
+}
+
+div.logoHeader, nav.busqueda{
+    display: flex;
+    /* flex: 1 1 50%; */
+    /* flex-direction: row; */
+    flex-grow: 1;
+    /* align-items: flex-start; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+nav.busqueda{
+    flex-grow: 50%;
+}
+
+ul li{
+    margin-right: 10px;
+}
+
+#enviar:hover{
+    background-color: #0022AA;
+    /* transition: all; */
+}
+
+.login{
+    width: 50%;
+    padding: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    ;
+}
+
+.boton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.boton-login{
+    width: 50%;
+}
+.nombre-usuario{
+    justify-content: center;
+    align-items: center;
+    /* color: red; */
+}
+.pass{
+    justify-content: center;
+}
+.input-log{
+    width: 100%;
+}
+
+.input-reg{
+    width: 30%;
 }
